@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AB2AD8EE23F3FB4500D2C4C9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AB2AD8ED23F3FB4500D2C4C9 /* Alamofire */; };
+		AB2AD8F123F3FC1200D2C4C9 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = AB2AD8F023F3FC1200D2C4C9 /* Differentiator */; };
+		AB2AD8F323F3FC1200D2C4C9 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = AB2AD8F223F3FC1200D2C4C9 /* RxDataSources */; };
+		AB2AD8F623F3FC6200D2C4C9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AB2AD8F523F3FC6200D2C4C9 /* Kingfisher */; };
+		AB2AD8F823F3FC6200D2C4C9 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AB2AD8F723F3FC6200D2C4C9 /* KingfisherSwiftUI */; };
+		AB2AD8FB23F3FCAC00D2C4C9 /* SwiftPhoenixClient in Frameworks */ = {isa = PBXBuildFile; productRef = AB2AD8FA23F3FCAC00D2C4C9 /* SwiftPhoenixClient */; };
+		AB2AD8FF23F3FEDE00D2C4C9 /* Differ in Frameworks */ = {isa = PBXBuildFile; productRef = AB2AD8FE23F3FEDE00D2C4C9 /* Differ */; };
 		AB6809C023F26B1300D3040D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6809BF23F26B1300D3040D /* AppDelegate.swift */; };
 		AB6809C223F26B1300D3040D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6809C123F26B1300D3040D /* SceneDelegate.swift */; };
 		AB6809C423F26B1300D3040D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6809C323F26B1300D3040D /* ViewController.swift */; };
@@ -64,12 +70,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2AD8F123F3FC1200D2C4C9 /* Differentiator in Frameworks */,
 				AB6809F523F27C6300D3040D /* RxRelay in Frameworks */,
 				AB6809F323F27C6300D3040D /* RxTest in Frameworks */,
+				AB2AD8F623F3FC6200D2C4C9 /* Kingfisher in Frameworks */,
+				AB2AD8F823F3FC6200D2C4C9 /* KingfisherSwiftUI in Frameworks */,
 				AB6809F723F27C6300D3040D /* RxCocoa in Frameworks */,
 				AB2AD8EE23F3FB4500D2C4C9 /* Alamofire in Frameworks */,
+				AB2AD8F323F3FC1200D2C4C9 /* RxDataSources in Frameworks */,
 				AB6809F123F27C6300D3040D /* RxSwift in Frameworks */,
 				AB6809F923F27C6300D3040D /* RxBlocking in Frameworks */,
+				AB2AD8FF23F3FEDE00D2C4C9 /* Differ in Frameworks */,
+				AB2AD8FB23F3FCAC00D2C4C9 /* SwiftPhoenixClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +194,12 @@
 				AB6809F623F27C6300D3040D /* RxCocoa */,
 				AB6809F823F27C6300D3040D /* RxBlocking */,
 				AB2AD8ED23F3FB4500D2C4C9 /* Alamofire */,
+				AB2AD8F023F3FC1200D2C4C9 /* Differentiator */,
+				AB2AD8F223F3FC1200D2C4C9 /* RxDataSources */,
+				AB2AD8F523F3FC6200D2C4C9 /* Kingfisher */,
+				AB2AD8F723F3FC6200D2C4C9 /* KingfisherSwiftUI */,
+				AB2AD8FA23F3FCAC00D2C4C9 /* SwiftPhoenixClient */,
+				AB2AD8FE23F3FEDE00D2C4C9 /* Differ */,
 			);
 			productName = NotiCheck;
 			productReference = AB6809BC23F26B1300D3040D /* NotiCheck.app */;
@@ -258,6 +276,11 @@
 			packageReferences = (
 				AB6809EF23F27C6300D3040D /* XCRemoteSwiftPackageReference "RxSwift" */,
 				AB2AD8EC23F3FB4500D2C4C9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				AB2AD8EF23F3FC1200D2C4C9 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				AB2AD8F423F3FC6200D2C4C9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				AB2AD8F923F3FCAC00D2C4C9 /* XCRemoteSwiftPackageReference "SwiftPhoenixClient" */,
+				AB2AD8FC23F3FCFD00D2C4C9 /* XCRemoteSwiftPackageReference "swift-nio-zlib-support" */,
+				AB2AD8FD23F3FEDE00D2C4C9 /* XCRemoteSwiftPackageReference "Differ" */,
 			);
 			productRefGroup = AB6809BD23F26B1300D3040D /* Products */;
 			projectDirPath = "";
@@ -638,6 +661,46 @@
 				minimumVersion = 4.9.1;
 			};
 		};
+		AB2AD8EF23F3FC1200D2C4C9 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		AB2AD8F423F3FC6200D2C4C9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.13.0;
+			};
+		};
+		AB2AD8F923F3FCAC00D2C4C9 /* XCRemoteSwiftPackageReference "SwiftPhoenixClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/davidstump/SwiftPhoenixClient.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		AB2AD8FC23F3FCFD00D2C4C9 /* XCRemoteSwiftPackageReference "swift-nio-zlib-support" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-zlib-support.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		AB2AD8FD23F3FEDE00D2C4C9 /* XCRemoteSwiftPackageReference "Differ" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tonyarnold/Differ.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.4;
+			};
+		};
 		AB6809EF23F27C6300D3040D /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -653,6 +716,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AB2AD8EC23F3FB4500D2C4C9 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		AB2AD8F023F3FC1200D2C4C9 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB2AD8EF23F3FC1200D2C4C9 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		AB2AD8F223F3FC1200D2C4C9 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB2AD8EF23F3FC1200D2C4C9 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		AB2AD8F523F3FC6200D2C4C9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB2AD8F423F3FC6200D2C4C9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		AB2AD8F723F3FC6200D2C4C9 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB2AD8F423F3FC6200D2C4C9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+		AB2AD8FA23F3FCAC00D2C4C9 /* SwiftPhoenixClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB2AD8F923F3FCAC00D2C4C9 /* XCRemoteSwiftPackageReference "SwiftPhoenixClient" */;
+			productName = SwiftPhoenixClient;
+		};
+		AB2AD8FE23F3FEDE00D2C4C9 /* Differ */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB2AD8FD23F3FEDE00D2C4C9 /* XCRemoteSwiftPackageReference "Differ" */;
+			productName = Differ;
 		};
 		AB6809F023F27C6300D3040D /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
