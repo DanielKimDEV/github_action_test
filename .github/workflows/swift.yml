@@ -12,9 +12,11 @@ jobs:
                 destination: ['platform=iOS Simulator,OS=13.2.2, name=iPhone 11']
 
     steps:
+        - uses: actions/checkout@master
         - uses: YOCKOW/Action-setup-swift@master
           with:
             swift-version: '5.1.2' # This value is passed to swiftenv without modification.
+            swift-package-directory:"./my-swift-package"
         - run: swift --version
         - name: Checkout
           uses: actions/checkout@master
