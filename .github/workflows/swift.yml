@@ -19,6 +19,12 @@ jobs:
             - run: swift --version
             - name: Checkout
               uses: actions/checkout@master
+            - uses: actions/cache@v1
+              with:
+              path: .build
+              key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+              restore-keys: |
+                ${{ runner.os }}-spm-
             - name: Github Action test
               id: test_app
               run: |
