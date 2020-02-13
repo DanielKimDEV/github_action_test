@@ -9,7 +9,7 @@ jobs:
         strategy:
             matrix:
                 xcode: [11.2_beta 2]
-                destination: ['platform=iOS Simulator,OS=13.2.2, name=iPhone 11']
+                destination: ['platform=iOS Simulator,OS=13.2.2,name=iPhone 11']
 
         steps:
             - uses: YOCKOW/Action-setup-swift@master
