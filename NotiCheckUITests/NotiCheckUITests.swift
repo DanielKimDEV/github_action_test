@@ -38,6 +38,7 @@ class NotiCheckUITests: XCTestCase {
             measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
                 XCUIApplication().launch()
             }
+            print("hello world2!!!!!!")
         }
     }
 }
