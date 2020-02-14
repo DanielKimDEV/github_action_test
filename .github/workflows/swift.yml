@@ -34,7 +34,7 @@ jobs:
         id: test_app
         run: |
           xcodebuild clean build \
-          -workspace NotiCheck.xcodeproj \
+          -workspace NotiCheck.xcworkspace \
           -scheme NotiCheck\ iOS \
           -destination "${destination}" \
           -configuration Debug \
