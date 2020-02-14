@@ -33,9 +33,9 @@ jobs:
           CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO test | xcpretty -c; echo "::set-output name=result::${PIPESTATUS[0]}"; echo "${PIPESTATUS[0]}"
         env:
           destination: ${{ matrix.destination }}
-    test-save:
-      strategy:
-        matrix:
+  test-save:
+    strategy:
+      matrix:
           os: [macOS-latest]
       runs-on: ${{ matrix.os }}
       steps:
