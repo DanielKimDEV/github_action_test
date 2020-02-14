@@ -18,10 +18,10 @@ jobs:
       - name: Cache
         uses: actions/cache@v1.1.2
         with:
-          path: .build
-          key: ${{ runner.os }}-data-akjndakjwndakjwndjanwkdjanwd
+          path: __caches__
+          key: cache
           restore-keys: |
-            ${{ runner.os }}-data
+            cachce
 #      - name: Generate files
 #        shell: bash
 #        run: __tests__/create-cache-files.sh ${{ runner.os }}
@@ -33,11 +33,12 @@ jobs:
       - name: Github Action test
         id: test_app
         run: |
-          xcodebuild clean build \
+          xcodebuild build \
           -workspace NotiCheck.xcworkspace \
           -scheme NotiCheck\ iOS \
           -destination "${destination}" \
           -configuration Debug \
+          -cache-builds \
           CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO test | xcpretty -c; echo "::set-output name=result::${PIPESTATUS[0]}"; echo "${PIPESTATUS[0]}"
         env:
           destination: ${{ matrix.destination }}
