@@ -19,7 +19,7 @@ jobs:
         uses: actions/cache@v1.1.2
         with:
           path: .build
-          key: ${{ runner.os }}-data
+          key: ${{ runner.os }}-data-akjndakjwndakjwndjanwkdjanwd
           restore-keys: |
             ${{ runner.os }}-data
 #      - name: Generate files
