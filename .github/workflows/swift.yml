@@ -18,7 +18,7 @@ jobs:
       - name: Cache
         uses: actions/cache@v1.1.2
         with:
-          path: refs/heads/master
+          path: .build
           key: ${{ runner.os }}-data
           restore-keys: |
             ${{ runner.os }}-data
