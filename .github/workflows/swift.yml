@@ -22,14 +22,14 @@ jobs:
           key: ${{ runner.os }}-data
           restore-keys: |
             ${{ runner.os }}-data
-      - name: Generate files
-        shell: bash
-        run: __tests__/create-cache-files.sh ${{ runner.os }}
-      - name: Save cache
-        uses: ./
-        with:
-          key: test-${{ runner.os }}-${{ github.run_id }}
-          path: test-cache
+#      - name: Generate files
+#        shell: bash
+#        run: __tests__/create-cache-files.sh ${{ runner.os }}
+#      - name: Save cache test
+#        uses: ./
+#        with:
+#          key: test-${{ runner.os }}-${{ github.run_id }}
+#          path: test-cache
       - name: Github Action test
         id: test_app
         run: |
