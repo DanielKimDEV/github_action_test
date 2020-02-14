@@ -33,7 +33,8 @@ jobs:
       - name: Github Action test
         id: test_app
         run: |
-          xcodebuild --cache-builds build \
+          --cache-builds
+          xcodebuild build \
           -workspace NotiCheck.xcworkspace \
           -scheme NotiCheck\ iOS \
           -destination "${destination}" \
