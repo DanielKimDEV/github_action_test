@@ -22,17 +22,17 @@ jobs:
           key: ${{ runner.os }}-data
           restore-keys: |
             ${{ runner.os }}-data
-        - name: Github Action test
-          id: test_app
-          run: |
-             xcodebuild clean build \
-             -workspace NotiCheck.xcodeproj \
-             -scheme NotiCheck\ iOS \
-             -destination "${destination}" \
-             -configuration Debug \
-             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO test | xcpretty -c; echo "::set-output name=result::${PIPESTATUS[0]}"; echo "${PIPESTATUS[0]}"
-          env:
-            destination: ${{ matrix.destination }}
+      - name: Github Action test
+         id: test_app
+       run: |
+          xcodebuild clean build \
+          -workspace NotiCheck.xcodeproj \
+          -scheme NotiCheck\ iOS \
+          -destination "${destination}" \
+          -configuration Debug \
+          CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO test | xcpretty -c; echo "::set-output name=result::${PIPESTATUS[0]}"; echo "${PIPESTATUS[0]}"
+       env:
+         destination: ${{ matrix.destination }}
 #        - name: iOS test
 #          id: ios_test
 #          run: |
